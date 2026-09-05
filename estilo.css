@@ -150,8 +150,12 @@ main {
 
 .galeria {
     height: 100vh;
-    background-color: #E2DACA;
-
+     background: linear-gradient(
+        to bottom,
+        #E2DACA 0%,
+        #E2DACA 10%,
+        #0b0b0c 100%
+    );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,7 +180,7 @@ main {
 
     position: relative;
     overflow: hidden;
-
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -319,4 +323,127 @@ main {
     to {
         transform: translateX(-50%);
     }
+}
+
+.section-perfumes {
+    background-color: #0b0b0c;
+}
+ 
+.perfumes {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 110px 40px;
+}
+ 
+.titulo {
+    text-align: center;
+    margin-bottom: 100px;
+}
+ 
+.titulo span {
+    display: block;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #a17c3f;
+    margin-bottom: 18px;
+}
+ 
+.titulo h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 42px;
+    line-height: 1.35;
+    color: #f2ece1;
+    margin: 0;
+}
+ 
+/* BLOCO DO PERFUME */
+ 
+.produto {
+    width: 100%;
+    min-height: 340px;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    gap: 90px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+ 
+    border-bottom: 1px solid rgba(242, 236, 225, 0.08);
+}
+ 
+.produto:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+ 
+/* IMAGEM */
+ 
+.imagem {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+ 
+.imagem::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(161,124,63,0.18) 0%, rgba(161,124,63,0) 70%);
+}
+ 
+.imagem img {
+    width: 260px;
+    max-width: 100%;
+    object-fit: contain;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+ 
+/* TEXTO */
+ 
+.texto {
+    width: 45%;
+}
+ 
+.texto h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    color: #f2ece1;
+    font-size: 26px;
+    margin: 0 0 18px;
+}
+ 
+.texto .linha {
+    width: 40px;
+    height: 1px;
+    background: #a17c3f;
+    margin-bottom: 18px;
+}
+ 
+.texto p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    color: #a6a49c;
+    font-size: 14.5px;
+    line-height: 1.85;
+    max-width: 380px;
+    margin-bottom: 16px;
+}
+ 
+/* INVERTE IMAGEM E TEXTO */
+ 
+.produto.invertido {
+    flex-direction: row-reverse;
 }
