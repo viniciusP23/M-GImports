@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- viewport responsivo: obrigatório para o site se adaptar a celulares/tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
@@ -11,8 +12,13 @@
 
 <body>
 
+    <!-- ============================================================
+         HERO
+         Seção de abertura: vídeo de fundo + menu fixo + palavras animadas
+         ============================================================ -->
     <section class="hero">
 
+        <!-- Menu fixo no topo (muda de cor ao rolar a página, via JS) -->
         <div class="hero-links">
             <div class="links">
                 <ul data-aos="fade-down">
@@ -23,12 +29,15 @@
             </div>
         </div>
 
+        <!-- Vídeo de fundo do hero -->
         <video class="hero-video" autoplay muted loop playsinline>
             <source src="img/8453909-uhd_2160_4096_25fps.mp4" type="video/mp4">
         </video>
 
+        <!-- Camada escura sobre o vídeo para dar contraste ao texto -->
         <div class="overlay"></div>
 
+        <!-- Palavras que aparecem/desaparecem em sequência (animação via script.js) -->
         <div class="hero-content">
             <h1 class="word">Elegância</h1>
             <h1 class="word">Luxo</h1>
@@ -38,6 +47,10 @@
 
     </section>
 
+    <!-- ============================================================
+         MAIN
+         Bloco de texto de introdução (fundo bege)
+         ============================================================ -->
     <main>
         <div class="text">
             <h1 data-aos="fade-down">Uma fragrância<br>inesquecível</h1>
@@ -45,8 +58,15 @@
         </div>
     </main>
 
+    <!-- ============================================================
+         GALERIA
+         3 cards com imagem de fundo; ao passar o mouse (ou tocar),
+         revela título, descrição e link
+         ============================================================ -->
     <section class="galeria">
         <div class="grid">
+
+            <!-- Card 01 -->
             <div data-aos="fade-right" class="cards">
                 <div class="bg"></div>
                 <div class="info">
@@ -57,6 +77,7 @@
                 </div>
             </div>
 
+            <!-- Card 02 -->
             <div data-aos="fade-down" class="cards">
                 <div class="bg"></div>
                 <div class="info">
@@ -67,6 +88,7 @@
                 </div>
             </div>
 
+            <!-- Card 03 -->
             <div data-aos="fade-left" class="cards">
                 <div class="bg"></div>
                 <div class="info">
@@ -77,69 +99,80 @@
                     <a href="#"><span class="link-text">Encontrar meu estilo</span> <span class="arrow">→</span></a>
                 </div>
             </div>
+
         </div>
     </section>
 
-<section class="section-perfumes">
+    <!-- ============================================================
+         SECTION PERFUMES
+         Blocos alternados de imagem + texto apresentando os produtos
+         ============================================================ -->
+    <section class="section-perfumes">
 
-    <div class="perfumes">
+        <div class="perfumes">
 
-        <div class="titulo">
-            <span>Coleção assinatura</span>
-            <h1>Aromas, memórias e histórias<br>inesquecíveis ao longo do tempo</h1>
+            <!-- Título da seção -->
+            <div class="titulo">
+                <span>Coleção assinatura</span>
+                <h1>Aromas, memórias e histórias<br>inesquecíveis ao longo do tempo</h1>
+            </div>
+
+            <!-- Produto 1: imagem à esquerda, texto à direita -->
+            <div class="produto">
+                <div class="imagem">
+                    <img src="img/pngegg (1).png" alt="Perfumes importados">
+                </div>
+
+                <div class="texto">
+                    <h2>Perfumes importados</h2>
+                    <div class="linha"></div>
+
+                    <p>Descubra perfumes importados de grandes marcas e fragrâncias que traduzem sofisticação, personalidade e exclusividade em cada gota.</p>
+
+                    <p>Escolha seu aroma favorito e tenha a experiência de uma fragrância marcante, sofisticada e inesquecível.</p>
+                </div>
+            </div>
+
+            <!-- Produto 2: "invertido" = imagem à direita, texto à esquerda -->
+            <div class="produto invertido">
+                <div class="imagem">
+                    <img src="img/frasco.png" alt="Perfumes por ml">
+                </div>
+
+                <div class="texto">
+                    <h2>Seu perfume, do seu jeito</h2>
+                    <div class="linha"></div>
+
+                    <p>Quer experimentar uma fragrância importada sem precisar comprar o frasco inteiro? Você também pode escolher a quantidade em ml que deseja.</p>
+
+                    <p>Retiramos a fragrância do perfume original e disponibilizamos em diferentes quantidades, uma opção prática e mais acessível para você aproveitar seu aroma favorito.</p>
+                </div>
+            </div>
+
+            <!-- Produto 3: volta ao padrão (imagem à esquerda, texto à direita) -->
+            <div class="produto">
+                <div class="imagem">
+                    <img src="img/perfumes.png" alt="Fragrâncias marcantes">
+                </div>
+
+                <div class="texto">
+                    <h2>Uma fragrância para chamar de sua</h2>
+                    <div class="linha"></div>
+
+                    <p>Encontre a fragrância que combina com sua personalidade e transforme cada momento em uma experiência única.</p>
+
+                    <p>Do aroma mais delicado ao mais marcante, escolha a essência que representa você e deixe sua presença por onde passar.</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="produto">
-            <div class="imagem">
-                <img src="img/pngegg (1).png" alt="Perfumes importados">
-            </div>
+    </section>
 
-            <div class="texto">
-                <h2>Perfumes importados</h2>
-                <div class="linha"></div>
-
-                <p>Descubra perfumes importados de grandes marcas e fragrâncias que traduzem sofisticação, personalidade e exclusividade em cada gota.</p>
-
-                <p>Escolha seu aroma favorito e tenha a experiência de uma fragrância marcante, sofisticada e inesquecível.</p>
-            </div>
-        </div>
-
-        <div class="produto invertido">
-            <div class="imagem">
-                <img src="img/frasco.png" alt="Perfumes por ml">
-            </div>
-
-            <div class="texto">
-                <h2>Seu perfume, do seu jeito</h2>
-                <div class="linha"></div>
-
-                <p>Quer experimentar uma fragrância importada sem precisar comprar o frasco inteiro? Você também pode escolher a quantidade em ml que deseja.</p>
-
-                <p>Retiramos a fragrância do perfume original e disponibilizamos em diferentes quantidades, uma opção prática e mais acessível para você aproveitar seu aroma favorito.</p>
-            </div>
-        </div>
-
-        <div class="produto">
-            <div class="imagem">
-                <img src="img/perfumes.png" alt="Fragrâncias marcantes">
-            </div>
-
-            <div class="texto">
-                <h2>Uma fragrância para chamar de sua</h2>
-                <div class="linha"></div>
-
-                <p>Encontre a fragrância que combina com sua personalidade e transforme cada momento em uma experiência única.</p>
-
-                <p>Do aroma mais delicado ao mais marcante, escolha a essência que representa você e deixe sua presença por onde passar.</p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-
-
+    <!-- ============================================================
+         MARQUEE
+         Faixa preta com texto rolando infinitamente (efeito letreiro)
+         ============================================================ -->
     <section class="marquee">
         <div class="marquee-content">
             <span>PERFUMES</span>
@@ -148,6 +181,7 @@
             <span>PERSONALIDADE</span>
             <span>EXCLUSIVIDADE</span>
 
+            <!-- itens repetidos: necessário para o loop do marquee ficar contínuo -->
             <span>PERFUMES</span>
             <span>ESSÊNCIA</span>
             <span>SOFISTICAÇÃO</span>
@@ -156,12 +190,79 @@
         </div>
     </section>
 
+    <!-- ============================================================
+         FOOTER - FALE CONOSCO
+         Rodapé com dados de contato, redes sociais e copyright
+         ============================================================ -->
+    <footer class="footer-contato">
+        <div class="footer-container">
+
+            <!-- Linha de cima: chamada + informações de contato -->
+            <div class="footer-topo">
+
+                <!-- Texto de chamada -->
+                <div class="footer-marca">
+                    <h2>Fale conosco</h2>
+                    <p>Tem alguma dúvida sobre nossos perfumes ou quer uma indicação personalizada? Nossa equipe está pronta para te atender.</p>
+                </div>
+
+                <!-- Grid com os canais de contato -->
+                <div class="footer-contatos">
+                    <div class="contato-item">
+                        <span class="contato-label">WhatsApp</span>
+                        <a href="https://wa.me/5500000000000" target="_blank">(00) 00000-0000</a>
+                    </div>
+
+                    <div class="contato-item">
+                        <span class="contato-label">E-mail</span>
+                        <a href="mailto:contato@essencia.com.br">contato@essencia.com.br</a>
+                    </div>
+
+                    <div class="contato-item">
+                        <span class="contato-label">Endereço</span>
+                        <p>Rua das Fragrâncias, 123 — São Paulo, SP</p>
+                    </div>
+
+                    <div class="contato-item">
+                        <span class="contato-label">Horário</span>
+                        <p>Seg a Sáb · 9h às 19h</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="footer-redes">
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">TikTok</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-baixo">
+                <p>&copy; 2026 Essência Perfumaria. Todos os direitos reservados.</p>
+            </div>
+
+        </div>
+    </footer>
+
 </body>
 
+<!-- ============================================================
+     SCRIPTS
+     GSAP: biblioteca de animação usada no script.js
+     AOS: animações de entrada ao rolar a página (data-aos="...")
+     ============================================================ -->
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+    /* No celular, a AOS pode falhar ao calcular quando um elemento
+       "entra na tela" (a barra de endereço do navegador muda a altura
+       da viewport), fazendo o elemento ficar travado com opacity: 0
+       para sempre. Por isso desativamos a animação em telas mobile:
+       os elementos aparecem direto, sem depender desse cálculo. */
+    AOS.init({
+        // disable: "mobile"
+    });
 </script>
 <script src="script.js"></script>
 
