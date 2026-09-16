@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* altura fixa usada apenas para dar espaço de rolagem no protótipo */
     height: 3000px;
@@ -414,29 +418,6 @@ main {
 }
 
 
-/* ==========================================================================
-   MARQUEE (faixa de texto rolando infinitamente)
-   ========================================================================== */
-.marquee {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.marquee-content {
-    display: flex;
-    width: max-content;
-    animation: passar 20s linear infinite;
-    background-color: #000;
-}
-
-.marquee-content span {
-    font-size: 50px;
-    font-weight: 600;
-    margin-right: 60px;
-    color: #fff;
-}
-
 @keyframes passar {
     from {
         transform: translateX(0);
@@ -699,6 +680,7 @@ main {
 
 /* --- Linha final de copyright --- */
 .footer-baixo {
+    text-align: center;
     padding-top: 20px;
     border-top: 1px solid rgba(242, 236, 225, 0.08);
 }
@@ -709,6 +691,10 @@ main {
     font-size: 12.5px;
     color: #6f6d66;
     text-align: center;
+}
+
+.footer-baixo small {
+    color: #585858;
 }
 
 
@@ -770,11 +756,6 @@ main {
         margin-right: auto;
     }
 
-    /* Marquee: texto menor para não quebrar o layout */
-    .marquee-content span {
-        font-size: 36px;
-        margin-right: 40px;
-    }
 }
 
 /* ---------- Celulares grandes / tablets em pé (até 768px) ---------- */
@@ -892,12 +873,6 @@ main {
 
     .imagem img {
         width: 200px;
-    }
-
-    /* Marquee: texto ainda menor no celular */
-    .marquee-content span {
-        font-size: 24px;
-        margin-right: 24px;
     }
 
     /* Footer: título e textos ajustados para telas bem pequenas */

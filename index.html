@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <!-- viewport responsivo: obrigatório para o site se adaptar a celulares/tablets -->
+    <link rel="icon" type="image/png" href="img/4b483aa0-dc4c-42c3-81a7-940f7546ef37.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
-    <title>Document</title>
+    <title>M&G Imports</title>
 </head>
 
 <body>
@@ -22,9 +23,9 @@
         <div class="hero-links">
             <div class="links">
                 <ul data-aos="fade-down">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#contatos">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -63,7 +64,7 @@
          3 cards com imagem de fundo; ao passar o mouse (ou tocar),
          revela título, descrição e link
          ============================================================ -->
-    <section class="galeria">
+    <section id="sobre" class="galeria">
         <div class="grid">
 
             <!-- Card 01 -->
@@ -73,7 +74,7 @@
                     <span>01</span>
                     <h1>Experiência Premium</h1>
                     <p>Uma experiência sofisticada, criada para transformar sua busca por fragrâncias em algo único.</p>
-                    <a href="#"><span class="link-text">Explorar experiência</span> <span class="arrow">→</span></a>
+                    <a href="#"><span class="link-text">Fale conosco</span> <span class="arrow">→</span></a>
                 </div>
             </div>
 
@@ -84,7 +85,7 @@
                     <span>02</span>
                     <h1>Essência Importada</h1>
                     <p>Uma seleção de fragrâncias marcantes e exclusivas para quem busca qualidade e personalidade.</p>
-                    <a href="#"><span class="link-text">Descobrir mais</span> <span class="arrow">→</span></a>
+                    <a href="#"><span class="link-text">Fale conosco</span> <span class="arrow">→</span></a>
                 </div>
             </div>
 
@@ -93,10 +94,13 @@
                 <div class="bg"></div>
                 <div class="info">
                     <span>03</span>
-                    <h1>Encontre seu Estilo</h1>
-                    <p>Descubra fragrâncias que combinam com sua personalidade, seu momento e a impressão que você
-                        deseja transmitir.</p>
-                    <a href="#"><span class="link-text">Encontrar meu estilo</span> <span class="arrow">→</span></a>
+
+                    <h1>Perfumes importados até você</h1>
+
+                    <p>Trabalhamos com perfumes importados selecionados para você encontrar sua fragrância favorita com
+                        praticidade e segurança.</p>
+
+                    <a href="#"> <span class="link-text">Fale conosco</span> <span class="arrow">→</span> </a>
                 </div>
             </div>
 
@@ -107,7 +111,7 @@
          SECTION PERFUMES
          Blocos alternados de imagem + texto apresentando os produtos
          ============================================================ -->
-    <section class="section-perfumes">
+    <section id="produtos" class="section-perfumes">
 
         <div class="perfumes">
 
@@ -127,9 +131,11 @@
                     <h2>Perfumes importados</h2>
                     <div class="linha"></div>
 
-                    <p>Descubra perfumes importados de grandes marcas e fragrâncias que traduzem sofisticação, personalidade e exclusividade em cada gota.</p>
+                    <p>Descubra perfumes importados de grandes marcas e fragrâncias que traduzem sofisticação,
+                        personalidade e exclusividade em cada gota.</p>
 
-                    <p>Escolha seu aroma favorito e tenha a experiência de uma fragrância marcante, sofisticada e inesquecível.</p>
+                    <p>Escolha seu aroma favorito e tenha a experiência de uma fragrância marcante, sofisticada e
+                        inesquecível.</p>
                 </div>
             </div>
 
@@ -143,9 +149,11 @@
                     <h2>Seu perfume, do seu jeito</h2>
                     <div class="linha"></div>
 
-                    <p>Quer experimentar uma fragrância importada sem precisar comprar o frasco inteiro? Você também pode escolher a quantidade em ml que deseja.</p>
+                    <p>Quer experimentar uma fragrância importada sem precisar comprar o frasco inteiro? Você também
+                        pode escolher a quantidade em ml que deseja.</p>
 
-                    <p>Retiramos a fragrância do perfume original e disponibilizamos em diferentes quantidades, uma opção prática e mais acessível para você aproveitar seu aroma favorito.</p>
+                    <p>Retiramos a fragrância do perfume original e disponibilizamos em diferentes quantidades, uma
+                        opção prática e mais acessível para você aproveitar seu aroma favorito.</p>
                 </div>
             </div>
 
@@ -159,9 +167,11 @@
                     <h2>Uma fragrância para chamar de sua</h2>
                     <div class="linha"></div>
 
-                    <p>Encontre a fragrância que combina com sua personalidade e transforme cada momento em uma experiência única.</p>
+                    <p>Encontre a fragrância que combina com sua personalidade e transforme cada momento em uma
+                        experiência única.</p>
 
-                    <p>Do aroma mais delicado ao mais marcante, escolha a essência que representa você e deixe sua presença por onde passar.</p>
+                    <p>Do aroma mais delicado ao mais marcante, escolha a essência que representa você e deixe sua
+                        presença por onde passar.</p>
                 </div>
             </div>
 
@@ -170,31 +180,10 @@
     </section>
 
     <!-- ============================================================
-         MARQUEE
-         Faixa preta com texto rolando infinitamente (efeito letreiro)
-         ============================================================ -->
-    <section class="marquee">
-        <div class="marquee-content">
-            <span>PERFUMES</span>
-            <span>ESSÊNCIA</span>
-            <span>SOFISTICAÇÃO</span>
-            <span>PERSONALIDADE</span>
-            <span>EXCLUSIVIDADE</span>
-
-            <!-- itens repetidos: necessário para o loop do marquee ficar contínuo -->
-            <span>PERFUMES</span>
-            <span>ESSÊNCIA</span>
-            <span>SOFISTICAÇÃO</span>
-            <span>PERSONALIDADE</span>
-            <span>EXCLUSIVIDADE</span>
-        </div>
-    </section>
-
-    <!-- ============================================================
          FOOTER - FALE CONOSCO
          Rodapé com dados de contato, redes sociais e copyright
          ============================================================ -->
-    <footer class="footer-contato">
+    <footer id="contatos" class="footer-contato">
         <div class="footer-container">
 
             <!-- Linha de cima: chamada + informações de contato -->
@@ -203,43 +192,48 @@
                 <!-- Texto de chamada -->
                 <div class="footer-marca">
                     <h2>Fale conosco</h2>
-                    <p>Tem alguma dúvida sobre nossos perfumes ou quer uma indicação personalizada? Nossa equipe está pronta para te atender.</p>
+                    <p>Tem alguma dúvida sobre nossos perfumes ou quer uma indicação personalizada? Nossa equipe está
+                        pronta para te atender.</p>
                 </div>
 
                 <!-- Grid com os canais de contato -->
                 <div class="footer-contatos">
                     <div class="contato-item">
+                        <span class="contato-label">Fale com:</span>
+                        <p>Luiz Ghilherme</p>
+                    </div>
+
+                    <div class="contato-item">
                         <span class="contato-label">WhatsApp</span>
-                        <a href="https://wa.me/5500000000000" target="_blank">(00) 00000-0000</a>
+                        <a href="https://wa.me/5514997646462" target="_blank">(14) 997646462</a>
                     </div>
 
                     <div class="contato-item">
-                        <span class="contato-label">E-mail</span>
-                        <a href="mailto:contato@essencia.com.br">contato@essencia.com.br</a>
+                        <span class="contato-label">Fale com:</span>
+                        <p>Matheus Paulini</p>
                     </div>
 
                     <div class="contato-item">
-                        <span class="contato-label">Endereço</span>
-                        <p>Rua das Fragrâncias, 123 — São Paulo, SP</p>
-                    </div>
-
-                    <div class="contato-item">
-                        <span class="contato-label">Horário</span>
-                        <p>Seg a Sáb · 9h às 19h</p>
+                        <span class="contato-label">WhatsApp</span>
+                        <a href="https://wa.me/5514998818219" target="_blank">(14) 998818219</a>
                     </div>
                 </div>
             </div>
 
             <!-- Redes sociais -->
             <div class="footer-redes">
-                <a href="#" target="_blank">Instagram</a>
-                <a href="#" target="_blank">Facebook</a>
-                <a href="#" target="_blank">TikTok</a>
+                <a href="https://www.instagram.com/__mgimports__/" target="_blank">Instagram</a>
             </div>
 
             <!-- Copyright -->
             <div class="footer-baixo">
-                <p>&copy; 2026 Essência Perfumaria. Todos os direitos reservados.</p>
+                <small>
+                    © 2026 M&G Imports • Todos os direitos reservados •
+                    Desenvolvido por -
+                    <a href="https://www.linkedin.com/in/vinicius-pereira25/" target="_blank" rel="noopener noreferrer">
+                        Vinicius Pereira
+                    </a>
+                </small>
             </div>
 
         </div>
