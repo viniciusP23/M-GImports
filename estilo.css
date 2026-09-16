@@ -812,15 +812,51 @@ main {
         gap: 30px;
     }
 
-    .cards {
-        display: block;
-        width: 100%;
-        max-width: 400px;
-        height: 480px;
+     .cards {
         opacity: 1 !important;
         visibility: visible !important;
         transform: none !important;
     }
+
+    /* Texto começa invisível */
+    .cards .info {
+        opacity: 0;
+    }
+
+    /* Quando o card entra na tela */
+    .cards.aos-animate .info {
+        opacity: 1;
+    }
+
+    /* Fundo escuro atrás do texto */
+    .cards.aos-animate .info::before {
+        opacity: 1;
+    }
+
+    /* Número */
+    .cards.aos-animate .info span:first-child {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Título */
+    .cards.aos-animate .info h1 {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Descrição */
+    .cards.aos-animate .info p {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Link */
+    .cards.aos-animate .info a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
 
 /* ---------- Celulares (até 480px) ---------- */
